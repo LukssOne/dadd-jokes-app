@@ -1,7 +1,11 @@
 <template>
 	<div>
-		<h1>About Dadjokes</h1>
-		<p>This is an app that displays dad jokes.</p>
+		<div>
+			<h2 class="text-3xl text-blue-500 font-semibold mb-4 pb-4 border-b-2">
+				About Dad jokes
+			</h2>
+			<p>This is an app that displays dad jokes.</p>
+		</div>
 	</div>
 </template>
 
@@ -21,7 +25,3 @@
 		}
 	}
 </script>
-
-<style scoped>
-
-</style>

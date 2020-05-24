@@ -1,15 +1,15 @@
 <template>
-	<header class="header">
-		<h1 class="title">Dad Jokes</h1>
-		<ul>
-			<li>
-				<nuxt-link to="/">Home</nuxt-link>
+	<header class="bg-gray-800 flex items-center justify-between p-4 text-white">
+		<h1 class="text-3xl font-semibold">Dad Jokes</h1>
+		<ul class="flex">
+			<li class="transition-colors duration-200 hover:bg-blue-700 rounded-lg">
+				<nuxt-link class="px-4 py-1 block" to="/">Home</nuxt-link>
 			</li>
-			<li>
-				<nuxt-link to="/jokes">Jokes</nuxt-link>
+			<li class="transition-colors duration-200 hover:bg-blue-700 rounded-lg">
+				<nuxt-link class="px-4 py-1 block" to="/jokes">Jokes</nuxt-link>
 			</li>
-			<li>
-				<nuxt-link to="/about">About</nuxt-link>
+			<li class="transition-colors duration-200 hover:bg-blue-700 rounded-lg">
+				<nuxt-link class="px-4 py-1 block" to="/about">About</nuxt-link>
 			</li>
 		</ul>
 	</header>
@@ -20,28 +20,3 @@
 		name: "AppHeader"
 	}
 </script>
-
-<style scoped>
-	.header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 1rem;
-		padding-bottom: 1rem;
-		border-bottom: 1px dotted #ccc;
-	}
-	.header .title {
-		font-size: 3rem;
-		color: #526488;
-	}
-	.header ul {
-		display: flex;
-	}
-	.header a {
-		display: inline-block;
-		background: #333;
-		color: #fff;
-		padding: 0.3rem 1rem;
-		margin-right: 0.5rem;
-	}
-</style>

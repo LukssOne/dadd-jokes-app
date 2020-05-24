@@ -33,11 +33,15 @@ export default {
 	** Nuxt.js dev-modules
 	*/
 	buildModules: [
-		// Doc: https://github.com/nuxt-community/eslint-module
-		'@nuxtjs/eslint-module',
 		// Doc: https://github.com/nuxt-community/nuxt-tailwindcss
 		'@nuxtjs/tailwindcss',
-		['nuxt-purgecss', { /* module options */ }]
+		['nuxt-purgecss', {
+			purge: [
+				'./pages/**/*.vue',
+				'./layouts/**/*.vue',
+				'./components/**/*.vue',
+			],
+		}]
 	],
 	/*
 	** Nuxt.js modules

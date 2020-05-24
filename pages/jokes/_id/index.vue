@@ -1,10 +1,12 @@
 <template>
 	<div>
-		<nuxt-link to="/jokes">Back to jokes</nuxt-link>
-		<h2>{{ joke }}</h2>
-		<hr>
-
-		<small>Joke ID: {{ $route.params.id }}</small>
+		<div class="flex justify-between items-baseline border-b-2 mb-4 px-4">
+			<nuxt-link to="/jokes" class="inline-block px-4 py-1 mb-4 shadow rounded text-blue-500 transition-colors duration-200 hover:bg-blue-600 hover:text-white">
+				Back to jokes
+			</nuxt-link>
+			<small class="block mb-4">Joke ID: {{ $route.params.id }}</small>
+		</div>
+		<p class="text-lg px-4">{{ joke }}</p>
 	</div>
 </template>
 
@@ -45,7 +47,3 @@
 
 	}
 </script>
-
-<style scoped>
-
-</style>
