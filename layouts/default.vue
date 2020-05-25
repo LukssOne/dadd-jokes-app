@@ -8,6 +8,12 @@
 </template>
 
 <script>
+	// TODO: Create VUEX Data
+	// TODO: Create Client for API
+	// TODO: Create Error page
+	// TODO: Create Transitions
+	// TODO: Create loading
+	// TODO: Extract CSS separately
 	import AppHeader from "../components/AppHeader";
 
 	export default {
